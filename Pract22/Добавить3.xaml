@@ -1,0 +1,19 @@
+﻿<Window x:Class="Pract22.Добавить3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pract22"
+        mc:Ignorable="d"
+                Title="Добавить поступпления" x:Name="WindowAddEdit" Loaded="Window_Loaded4" Height="322" Width="370" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Label Content="НомерСклада" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Width="168" FontSize="14" Height="28"/>
+        <Label Content="КодТовара" HorizontalAlignment="Left" Margin="13,82,0,0" VerticalAlignment="Top" Width="168" FontSize="14" Height="28"/>
+        <Label Content="Количество" HorizontalAlignment="Left" Margin="13,115,0,0" VerticalAlignment="Top" Width="168" FontSize="14" Height="28"/>
+        <ComboBox x:Name="Nom" HorizontalAlignment="Left" Height="34" Margin="185,43,0,0" VerticalAlignment="Top" Width="172" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="{Binding Path=НомерСклада}"/>
+        <ComboBox x:Name="Kod" HorizontalAlignment="Left" Height="28" Margin="185,82,0,0" VerticalAlignment="Top" Width="172" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="{Binding Path=КодТовара}"/>
+        <TextBox x:Name="Kol" HorizontalAlignment="Left" Height="28" Margin="186,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="{Binding Path=Количество}"/>
+        <Button Click="Fill_Click" x:Name="btnAddEdit" Content="Добавить" HorizontalAlignment="Left" Margin="26,225,0,0" VerticalAlignment="Top" Width="136" FontSize="14" Height="30"/>
+        <Button Click="Cansel_Click" Content="Отмена" HorizontalAlignment="Left" Margin="185,225,0,0" VerticalAlignment="Top" Width="136" FontSize="14" Height="30"/>
+    </Grid>
+</Window>
